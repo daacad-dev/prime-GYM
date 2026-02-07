@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* margin: 20px; */
+}
+
+h1{
+    text-align: center;
+    font-weight: 500;
+    color: darkblue;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px 0px;
+}
+
+.services{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) );
+    gap: 20px;
+    padding: 20px;
+
+}
+
+
+
+.service{
+    margin: 10px auto;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid cyan;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service h2{
+    padding: 5px;
+}
+
+.service i{
+    font-size: 30px;
+}
+
+.fa-square-facebook{
+    color: darkblue;
+}
+.fa-square-whatsapp{
+    color: goldenrod;
+}
+.fa-square-snapchat{
+    color: rgb(155, 214, 68);
+}
+
+.fa-square-instagram{
+    color: rgb(212, 62, 182);
+}
+
+/* meduim screen */
+@media(max-width:860px){
+    .services{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) );
+    }
+}
+
+@media(max-width:640px){
+    .services{
+        grid-template-columns: 1fr;
+    }
+}
